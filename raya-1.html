@@ -65,6 +65,16 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
         }
+
+        .floating-woman {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 180px;
+            height: auto;
+            z-index: 999;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
@@ -75,5 +85,7 @@
         </div>
         <a href="index.html" class="back-btn">← Back Home</a>
     </div>
+
+    <img src="welcome-woman.png" alt="Welcome lady" class="floating-woman">
 </body>
 </html>
