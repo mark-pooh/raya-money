@@ -6,7 +6,7 @@
     <title>Raya 2 - Selamat Hari Raya</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -88,13 +88,29 @@
             z-index: 999;
             pointer-events: none;
         }
+        
+        .sender {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #444;
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #c471ed;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Selamat Hari Raya <br>✨ Aidilfitri ✨</h1>
 
-        <small>Ikhlas Dari: Marfu'ah<small>
+        <p class="sender">
+    Ikhlas Dari: <span class="name">Marfu'ah</span>
+</p>
         <img src="logo-tng.png" alt="TNG Logo" class="logo">
 
         <div class="qr-placeholder">
