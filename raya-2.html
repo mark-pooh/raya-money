@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raya 2 - Selamat Hari Raya</title>
 
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -21,7 +22,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 20px 20px 20px;
+            padding: 20px;
         }
 
         .container {
@@ -38,6 +39,22 @@
             margin-bottom: 5px;
             font-size: 1.6em;
             font-family: 'Pacifico', cursive;
+        }
+
+        /* Sender text */
+        .sender {
+            margin-top: 10px;
+            font-size: 0.85em;
+            color: #888;
+            letter-spacing: 0.3px;
+        }
+
+        .name {
+            font-family: 'Pacifico', cursive;
+            font-size: 1em;
+            color: #c471ed;
+            margin-left: 4px;
+            opacity: 0.9;
         }
 
         .logo {
@@ -88,30 +105,17 @@
             z-index: 999;
             pointer-events: none;
         }
-        
-        .sender {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #444;
-}
-
-.name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3em;
-    background: linear-gradient(135deg, #ff9a9e, #c471ed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-}
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Selamat Hari Raya <br>✨ Aidilfitri ✨</h1>
 
         <p class="sender">
-    Ikhlas Dari: <span class="name">Marfu'ah</span>
-</p>
+            Ikhlas Dari: <span class="name">Marfu'ah</span>
+        </p>
+
         <img src="logo-tng.png" alt="TNG Logo" class="logo">
 
         <div class="qr-placeholder">
