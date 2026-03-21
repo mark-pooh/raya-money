@@ -58,6 +58,7 @@
             height: 330px;
             margin: 0 auto 24px;
             z-index: 1;
+            overflow: hidden;
         }
 
         .girl {
@@ -84,13 +85,13 @@
             filter: drop-shadow(0 6px 8px rgba(0,0,0,0.15));
         }
 
-        .m1 { left: 48%; bottom: 175px; animation-delay: 0s; }
-        .m2 { left: 49%; bottom: 190px; animation-delay: 0.35s; }
-        .m3 { left: 50%; bottom: 180px; animation-delay: 0.7s; }
-        .m4 { left: 47%; bottom: 195px; animation-delay: 1.05s; }
-        .m5 { left: 51%; bottom: 185px; animation-delay: 1.4s; }
-        .m6 { left: 48%; bottom: 200px; animation-delay: 1.75s; }
-        .m7 { left: 50%; bottom: 188px; animation-delay: 2.1s; }
+        .m1 { left: 18%; top: 0; animation-delay: 0s; }
+        .m2 { left: 30%; top: -10px; animation-delay: 0.4s; }
+        .m3 { left: 42%; top: 5px; animation-delay: 0.8s; }
+        .m4 { left: 56%; top: -8px; animation-delay: 1.2s; }
+        .m5 { left: 68%; top: 0; animation-delay: 1.6s; }
+        .m6 { left: 80%; top: -12px; animation-delay: 2s; }
+        .m7 { left: 50%; top: -5px; animation-delay: 2.4s; }
 
         .sparkle {
             position: absolute;
@@ -176,26 +177,26 @@
 
         @keyframes throwMoney {
             0% {
-                transform: translate(0, 0) rotate(0deg) scale(0.6);
+                transform: translate(0, -20px) rotate(0deg) scale(0.85);
                 opacity: 0;
             }
             10% {
                 opacity: 1;
             }
             25% {
-                transform: translate(-70px, -40px) rotate(-18deg) scale(0.85);
+                transform: translate(-10px, 60px) rotate(12deg) scale(0.9);
                 opacity: 1;
             }
-            45% {
-                transform: translate(95px, -110px) rotate(25deg) scale(1);
+            50% {
+                transform: translate(12px, 140px) rotate(-10deg) scale(1);
                 opacity: 1;
             }
-            70% {
-                transform: translate(-120px, -170px) rotate(-30deg) scale(0.95);
+            75% {
+                transform: translate(-8px, 220px) rotate(14deg) scale(0.95);
                 opacity: 1;
             }
             100% {
-                transform: translate(140px, -250px) rotate(45deg) scale(0.75);
+                transform: translate(10px, 320px) rotate(-18deg) scale(0.85);
                 opacity: 0;
             }
         }
