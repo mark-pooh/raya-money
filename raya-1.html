@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raya 1 - Selamat Hari Raya</title>
+
+    <!-- Cursive Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -19,6 +24,7 @@
             align-items: flex-start;
             padding: 40px 20px 20px;
         }
+
         .container {
             background: white;
             padding: 60px 40px;
@@ -27,11 +33,20 @@
             max-width: 600px;
             text-align: center;
         }
+
         h1 {
             color: #764ba2;
-            margin-bottom: 30px;
-            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-size: 1.6em;
+            font-family: 'Pacifico', cursive;
         }
+
+        .logo {
+            width: 80px;
+            margin: 10px auto 20px;
+            display: block;
+        }
+
         .qr-placeholder {
             background: #f0f0f0;
             border: 2px dashed #667eea;
@@ -40,16 +55,13 @@
             margin: 30px 0;
             display: inline-block;
         }
+
         .qr-placeholder img {
             max-width: 250px;
             width: 100%;
             height: auto;
         }
-        .qr-text {
-            color: #999;
-            font-size: 0.9em;
-            margin-top: 10px;
-        }
+
         .back-btn {
             display: inline-block;
             margin-top: 30px;
@@ -60,9 +72,13 @@
             border-radius: 50px;
             transition: all 0.3s ease;
             font-weight: 600;
+
+            /* Move slightly left */
+            transform: translateX(-20px);
         }
+
         .back-btn:hover {
-            transform: translateY(-2px);
+            transform: translateX(-20px) translateY(-2px);
             box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
         }
 
@@ -77,12 +93,18 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>✨ Selamat Hari Raya Aidilfitri ✨</h1>
+
+        <!-- Logo Placeholder -->
+        <img src="tng-logo.png" alt="TNG Logo" class="logo">
+
         <div class="qr-placeholder">
             <img src="1774058274762_100~2.jpg" alt="QR Code">
         </div>
+
         <a href="index.html" class="back-btn">← Back Home</a>
     </div>
 
