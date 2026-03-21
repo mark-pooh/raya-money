@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raya Money</title>
 
-    <!-- Same font as other pages -->
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
     <style>
@@ -45,20 +45,20 @@
         .subtitle {
             color: #667eea;
             font-size: 1em;
-            margin-bottom: 18px;
+            margin-bottom: 14px;
         }
 
         .hero {
             position: relative;
             width: 100%;
-            height: 260px; /* reduced */
-            margin-bottom: 10px; /* tighter */
+            height: 200px;      /* reduced height */
+            margin-bottom: -10px; /* pull buttons closer */
         }
 
         .girl {
             position: absolute;
             left: 50%;
-            bottom: 0;
+            bottom: -10px; /* slightly lower */
             transform: translateX(-50%);
             width: 200px;
             max-width: 70%;
@@ -68,13 +68,16 @@
 
         .buttons-container {
             display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 14px;
+            align-items: center;
+            margin-top: 10px;
         }
 
         .btn {
-            padding: 13px 30px;
+            width: 80%;
+            max-width: 280px;
+            padding: 13px 0;
             font-size: 1em;
             border: none;
             border-radius: 50px;
@@ -121,7 +124,7 @@
             }
 
             .hero {
-                height: 220px;
+                height: 170px;
             }
 
             .girl {
@@ -129,7 +132,7 @@
             }
 
             .btn {
-                padding: 11px 24px;
+                width: 90%;
                 font-size: 0.95em;
             }
         }
@@ -139,7 +142,7 @@
 <body>
     <div class="container">
         <h1>✨ Money Money ✨</h1>
-        <p class="subtitle">Duit duit.. pilih pilih~</p>
+        <p class="subtitle">Duit raya meh~~</p>
 
         <div class="hero">
             <img src="woman-money.png" alt="Raya mascot" class="girl">
